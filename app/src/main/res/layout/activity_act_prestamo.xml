@@ -41,7 +41,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="objeto"
+                android:text="Objeto"
                 android:id="@+id/textView2"
                 android:layout_gravity="center_horizontal" />
 
@@ -55,7 +55,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="prestatario"
+                android:text="Prestatario"
                 android:id="@+id/textView3"
                 android:layout_gravity="center_horizontal" />
 
@@ -69,7 +69,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="Fecha Prestamo"
+                android:text="Fecha de prestamo"
                 android:id="@+id/textView4"
                 android:layout_gravity="center_horizontal" />
 
@@ -84,7 +84,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="Fecha Devolucion"
+                android:text="Fecha de devolucion"
                 android:id="@+id/textView5"
                 android:layout_gravity="center_horizontal" />
 
