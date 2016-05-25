@@ -2,11 +2,11 @@
     <string name="app_name">BorrowMEbeta</string>
     <array name="categorias">
         <item>Libros</item>
-        <item>Electronicos</item>
-        <item>Tecnologia</item>
-        <item>Electrodomesticos</item>
+        <item>Electrónicos</item>
+        <item>Tecnología</item>
+        <item>Electrodomésticos</item>
         <item>Herramientas</item>
-        <item>Vehiculos</item>
+        <item>Vehículos</item>
 
     </array>
 </resources>
