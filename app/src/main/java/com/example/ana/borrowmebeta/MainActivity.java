@@ -15,7 +15,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         //------------------------------
-        prestar= (ImageView) findViewById(R.id.imageView);
+        prestar= (ImageView) findViewById(R.id.imageView1);
         recuperar=(ImageView) findViewById(R.id.imageView3);
         verPS=(ImageView) findViewById(R.id.imageView2);
         verRec=(ImageView) findViewById(R.id.imageView4);
@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
         prestar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                 startActivity(new Intent(MainActivity.this,act_prestamo.class));
+                 startActivity(new Intent(MainActivity.this, act_prestamo.class));
             }
         });
         //------------------------btnprestar
