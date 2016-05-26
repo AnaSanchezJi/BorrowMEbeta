@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">BorrowMEbeta</string>
     <array name="categorias">
+
         <item>Artículos escolares</item>
         <item>Dinero</item>
         <item>Discos</item>
