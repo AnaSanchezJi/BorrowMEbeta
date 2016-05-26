@@ -30,6 +30,8 @@ public class act_logprestamos extends AppCompatActivity {
         detallepres.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                if (sel == -1) {return;}
+
                 pruebamostrar();
                 new AlertDialog.Builder(act_logprestamos.this).setTitle("Detalle Del Préstamo ").setMessage(cadenamostrar).show();
             }
