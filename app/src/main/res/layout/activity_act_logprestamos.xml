@@ -36,10 +36,16 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:layout_gravity="center_vertical"
             android:id="@+id/imageViewana1"
 
             />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/imageViewana9"
+            android:layout_weight="1"
+            android:src="@drawable/brm10" />
 
     </LinearLayout>
 

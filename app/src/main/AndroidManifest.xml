@@ -19,7 +19,7 @@
         <activity android:name=".act_logrecuperados" />
         <activity android:name=".act_logprestamos" />
         <activity android:name=".act_prestamo" />
-        <activity android:name=".act_prestamoapi21"></activity>
+        <activity android:name=".act_prestamoapi21" />
     </application>
 
 </manifest>
