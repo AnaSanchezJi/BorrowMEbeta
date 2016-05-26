@@ -24,7 +24,16 @@ public class MainActivity extends AppCompatActivity {
         prestar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                 startActivity(new Intent(MainActivity.this, act_prestamo.class));
+                int currentapiVersion = android.os.Build.VERSION.SDK_INT;
+                if (currentapiVersion >= android.os.Build.VERSION_CODES.LOLLIPOP){
+                    startActivity(new Intent(MainActivity.this, act_prestamoapi21.class));
+                } else{
+                    startActivity(new Intent(MainActivity.this, act_prestamo.class));
+                }
+
+
+
+                // startActivity(new Intent(MainActivity.this, act_prestamo.class));
             }
         });
         //------------------------btnprestar
