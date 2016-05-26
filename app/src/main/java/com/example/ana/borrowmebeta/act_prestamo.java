@@ -52,8 +52,6 @@ public class act_prestamo extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 String objeto1,prestatario1;
-// prueba api 21 date picker
-
                 objeto1=objeto.getText().toString();
                 prestatario1=prestatario.getText().toString();
 
