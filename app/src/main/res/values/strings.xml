@@ -1,11 +1,18 @@
 <resources>
     <string name="app_name">BorrowMEbeta</string>
     <array name="categorias">
-        <item>Libros</item>
-        <item>Electrónicos</item>
-        <item>Tecnología</item>
+        <item>Artículos escolares</item>
+        <item>Dinero</item>
+        <item>Discos</item>
         <item>Electrodomésticos</item>
+        <item>Electrónicos</item>
         <item>Herramientas</item>
+        <item>Juegos</item>
+        <item>Libros</item>
+        <item>Llaves</item>
+        <item>Otros</item>
+        <item>Ropa</item>
+        <item>Tecnología</item>
         <item>Vehículos</item>
 
     </array>
