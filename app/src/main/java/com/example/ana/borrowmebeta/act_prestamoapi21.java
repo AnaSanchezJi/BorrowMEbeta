@@ -53,7 +53,9 @@ public class act_prestamoapi21 extends AppCompatActivity {
                 fechaPRE=fepres.getText().toString();
                 fechaDEV=fedev.getText().toString();
                 fedev.setText(fechaActual());
+
                 if(objeto1.length()==0 && prestatario1.length()==0){prestatario.setText("ingrese prestatario");objeto.setText("ingrese objeto");return;}
+
                 try{
                     SQLiteDatabase db=conexionBD.getWritableDatabase();
                     String SQL="INSERT INTO Prestamos(Categoria,ObjetoPres,Prestatario,FechPrest,FechRec,Estatus) VALUES ('"+categorias.getSelectedItem().toString()+"','"+objeto1+"','"+prestatario1+"','"+fechaPRE+"','"+fechaDEV+"',0)";

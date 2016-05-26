@@ -62,7 +62,7 @@ public class act_logrecuperados extends AppCompatActivity {
                     String SQL = "UPDATE Prestamos SET ESTATUS=2 WHERE IDprestamo=" + objre[selre][0];
                     //Categoria VARCHAR(50), ObjPres VARCHAR(100), Prestario VARCHAR(100),FechPrest DATE, FechRec DATE), Estatus INTEGER
                     db.execSQL(SQL);
-                    new AlertDialog.Builder(act_logrecuperados.this).setTitle("ELIMINACIÓN CORRECTA").setMessage("SE ACTUALIZO CORRECTAMENTE").show();
+                    new AlertDialog.Builder(act_logrecuperados.this).setTitle("ELIMINACIÓN CORRECTA").setMessage("SE ELIMINO CORRECTAMENTE").show();
                     actualizarListView();
                 } catch (SQLiteException e) {
                     new AlertDialog.Builder(act_logrecuperados.this).setTitle("ERROR").setMessage("NO SE PUDO RECUPERAR" + e.getMessage()).show();
