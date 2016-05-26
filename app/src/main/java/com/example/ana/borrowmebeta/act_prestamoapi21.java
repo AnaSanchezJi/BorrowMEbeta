@@ -54,7 +54,7 @@ public class act_prestamoapi21 extends AppCompatActivity {
                 fechaDEV=fedev.getText().toString();
                 fedev.setText(fechaActual());
 
-                if(objeto1.length()==0 && prestatario1.length()==0){prestatario.setText("ingrese prestatario");objeto.setText("ingrese objeto");return;}
+                if(objeto1.length()==0 && prestatario1.length()==0){prestatario.setText("Ingrese prestatario");objeto.setText("Ingrese objeto");return;}
 
                 try{
                     SQLiteDatabase db=conexionBD.getWritableDatabase();

@@ -65,7 +65,7 @@ public class act_logrecuperados extends AppCompatActivity {
                     new AlertDialog.Builder(act_logrecuperados.this).setTitle("ELIMINACIÓN CORRECTA").setMessage("SE ELIMINO CORRECTAMENTE").show();
                     actualizarListView();
                 } catch (SQLiteException e) {
-                    new AlertDialog.Builder(act_logrecuperados.this).setTitle("ERROR").setMessage("NO SE PUDO RECUPERAR" + e.getMessage()).show();
+                    new AlertDialog.Builder(act_logrecuperados.this).setTitle("ERROR").setMessage("NO SE PUDO ELIMINAR" + e.getMessage()).show();
                 }
             }
 
@@ -92,7 +92,7 @@ public class act_logrecuperados extends AppCompatActivity {
             }
             else{
                 objre= new String[1][3];
-                objre[0][1]="No hay objetos prestados";
+                objre[0][1]="No hay objetos recuperados";
                 objre[0][0]="";
                 objre[0][2]="";
                 selre=-1;

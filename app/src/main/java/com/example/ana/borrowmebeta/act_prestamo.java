@@ -55,7 +55,7 @@ public class act_prestamo extends AppCompatActivity {
                 objeto1=objeto.getText().toString();
                 prestatario1=prestatario.getText().toString();
 
-               if(objeto1.length()==0 && prestatario1.length()==0){prestatario.setText("ingrese prestatario");objeto.setText("ingrese objeto");return;}
+               if(objeto1.length()==0 && prestatario1.length()==0){prestatario.setText("Ingrese prestatario");objeto.setText("Ingrese objeto");return;}
 
                     try {
                             SQLiteDatabase db = conexionBD.getWritableDatabase();

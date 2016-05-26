@@ -90,7 +90,7 @@ public class act_recuperar extends AppCompatActivity {
             }
             else{
                 objre2= new String[1][3];
-                objre2[0][1]="No hay objetos recuperados";
+                objre2[0][1]="No hay objetos para recuperar";
                 objre2[0][0]="";
                 objre2[0][2]="";
                 selre2=-1;
