@@ -23,33 +23,34 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="seleccione articulo a recuperar"
+            android:text="Seleccione artículo a recuperar"
             android:id="@+id/textView6"
             android:layout_gravity="center_horizontal"
             android:paddingTop="80dp" />
 
         <ListView
             android:layout_width="match_parent"
-            android:layout_height="300dp"
-            android:id="@+id/listView"
+            android:layout_height="380dp"
+            android:id="@+id/listViewlucero2"
             android:paddingTop="30dp" />
     </LinearLayout>
 
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:layout_height="130dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"
         android:layout_gravity="center_horizontal"
         android:paddingTop="10dp">
 
         <ImageView
-            android:layout_width="180dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/imageViewlucero1"
             android:src="@drawable/brm2" />
 
         <ImageView
-            android:layout_width="170dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/imageViewlucero2"
             android:src="@drawable/brm11" />

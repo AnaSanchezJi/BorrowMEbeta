@@ -89,7 +89,7 @@ public class act_prestamoapi21 extends AppCompatActivity {
         }else{
             fechaActual+="/0"+dayOfMonth;
         }
-        fechaActual+=c.get(Calendar.MONTH);
+
         return fechaActual;
     }
 }
