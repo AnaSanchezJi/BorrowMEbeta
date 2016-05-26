@@ -88,7 +88,7 @@
                 android:id="@+id/textView5"
                 android:layout_gravity="center_horizontal" />
 
-            <DatePicker
+          <DatePicker
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/datePickerAl2"

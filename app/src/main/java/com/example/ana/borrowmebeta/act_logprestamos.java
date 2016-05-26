@@ -13,7 +13,7 @@ import android.widget.ImageView;
 import android.widget.ListView;
 
 public class act_logprestamos extends AppCompatActivity {
-    ImageView regresarlogpres, elilogpres;
+    ImageView regresarlogpres;
     String[][] obj;
     ListView lisobj;
     ConexionBD bd;
@@ -22,6 +22,7 @@ public class act_logprestamos extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_act_logprestamos);
+
         //Regresar Botton
         regresarlogpres = (ImageView) findViewById(R.id.imageViewana1);
         regresarlogpres.setOnClickListener(new View.OnClickListener() {
@@ -31,7 +32,8 @@ public class act_logprestamos extends AppCompatActivity {
             }
         });
         //fin Regresar botton
-        elilogpres = (ImageView) findViewById(R.id.imageViewana2);
+
+
         lisobj = (ListView) findViewById(R.id.listViewana1);
         bd = new ConexionBD(this, "basedatos", null, 1);
         sel = 0;
@@ -49,26 +51,9 @@ public class act_logprestamos extends AppCompatActivity {
             }
         });
         //fin list
-        elilogpres.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                try {
-                    if (sel == -1) {
-                        return;
-                    }
-                    SQLiteDatabase db = bd.getWritableDatabase();
-                    String SQL = "UPDATE Prestamos SET ESTATUS=2 WHERE IDprestamo=" + obj[sel][0];
-                    //Categoria VARCHAR(50), ObjPres VARCHAR(100), Prestario VARCHAR(100),FechPrest DATE, FechRec DATE), Estatus INTEGER
-                    db.execSQL(SQL);
-                    new AlertDialog.Builder(act_logprestamos.this).setTitle("ELIMINACIÓN CORRECTA").setMessage("SE ACTUALIZO CORRECTAMENTE").show();
-                    actualizarListView();
-                } catch (SQLiteException e) {
-                    new AlertDialog.Builder(act_logprestamos.this).setTitle("ERROR").setMessage("NO SE PUDO RECUPERAR" + e.getMessage()).show();
-                }
-            }
 
-        });
-    }
+
+    }//finOncreate
        //metodo actualizar list
         public void actualizarListView(){
             try{
@@ -105,5 +90,5 @@ public class act_logprestamos extends AppCompatActivity {
             lisobj.setAdapter(adaptador);
         }
 
-    }//oncreate
+    }
 

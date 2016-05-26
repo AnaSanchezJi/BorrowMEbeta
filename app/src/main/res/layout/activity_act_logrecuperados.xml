@@ -16,43 +16,42 @@
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="380dp"
+        android:layout_height="450dp"
         android:layout_gravity="center_horizontal">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="Articulos recuperados"
+            android:text="Artículos recuperados"
             android:id="@+id/textView6"
             android:layout_gravity="center_horizontal"
             android:paddingTop="80dp" />
 
         <ListView
             android:layout_width="match_parent"
-            android:layout_height="300dp"
-            android:id="@+id/listView"
-            android:paddingTop="30dp" />
+            android:layout_height="370dp"
+            android:id="@+id/listViewlucero1"
+             />
     </LinearLayout>
 
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:layout_height="130dp"
-        android:layout_gravity="center_horizontal"
-        android:paddingTop="10dp">
+        android:layout_height="0dp"
+        android:layout_weight="1">
 
         <ImageView
-            android:layout_width="180dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/imageViewlucero3"
             android:src="@drawable/brm2" />
 
         <ImageView
-            android:layout_width="81dp"
+            android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:id="@+id/imageViewlucero4"
-            android:background="@android:drawable/ic_delete"/>
+            android:src="@android:drawable/ic_delete"/>
     </LinearLayout>
 
 </LinearLayout>
