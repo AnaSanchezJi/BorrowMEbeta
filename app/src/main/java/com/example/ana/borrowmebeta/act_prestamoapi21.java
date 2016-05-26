@@ -35,7 +35,8 @@ public class act_prestamoapi21 extends AppCompatActivity {
         conexionBD=new ConexionBD(this,"basedatos",null,1);
         fechapres=fechaActual();
         fechadev=fechaActual();
-
+        fepres.setText(fechapres);
+        fedev.setText(fechadev);
         regresar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -51,6 +52,7 @@ public class act_prestamoapi21 extends AppCompatActivity {
                 prestatario1=prestatario.getText().toString();
                 fechaPRE=fepres.getText().toString();
                 fechaDEV=fedev.getText().toString();
+                fedev.setText(fechaActual());
                 try{
                     SQLiteDatabase db=conexionBD.getWritableDatabase();
                     String SQL="INSERT INTO Prestamos(Categoria,ObjetoPres,Prestatario,FechPrest,FechRec,Estatus) VALUES ('"+categorias.getSelectedItem().toString()+"','"+objeto1+"','"+prestatario1+"','"+fechapres+"','"+fechadev+"',0)";
