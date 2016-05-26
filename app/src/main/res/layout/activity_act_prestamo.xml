@@ -12,7 +12,7 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="460dp"
-        android:id="@+id/scrollView"
+        android:id="@+id/scrollViewAl1"
         android:layout_weight="0"
         android:paddingTop="85dp">
         <LinearLayout
@@ -32,7 +32,7 @@
             <Spinner
                 android:layout_width="match_parent"
                 android:layout_height="70dp"
-                android:id="@+id/spinner"
+                android:id="@+id/spinnerAl1"
                 android:layout_gravity="center_horizontal"
                 android:entries="@array/categorias"
                 />
@@ -48,7 +48,7 @@
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="42dp"
-                android:id="@+id/editText"
+                android:id="@+id/editTextAl1"
                 android:layout_gravity="center_horizontal" />
 
             <TextView
@@ -62,7 +62,7 @@
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="42dp"
-                android:id="@+id/editText2"
+                android:id="@+id/editTextAL2"
                 android:layout_gravity="center_horizontal" />
 
             <TextView
@@ -76,7 +76,7 @@
             <DatePicker
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/datePicker"
+                android:id="@+id/datePickerAL1"
                 android:layout_gravity="center_horizontal"
                 android:calendarViewShown="false" />
 
@@ -91,7 +91,7 @@
             <DatePicker
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/datePicker2"
+                android:id="@+id/datePickerAl2"
                 android:layout_gravity="center_horizontal"
                 android:calendarViewShown="false" />
 
