@@ -31,7 +31,7 @@ public class act_prestamo extends AppCompatActivity {
         categorias=(Spinner) findViewById(R.id.spinnerAl1);
         regresar= (ImageView) findViewById(R.id.imageViewAL1);
         prestar= (ImageView) findViewById(R.id.imageViewAL2);
-        objeto=  (EditText)  findViewById(R.id.editTextAl1);
+        objeto=(EditText)  findViewById(R.id.editTextAl1);
         prestatario=  (EditText)  findViewById(R.id.editTextAL2);
         fepres=  (DatePicker)  findViewById(R.id.datePickerAL1);
         fedev=  (DatePicker)  findViewById(R.id.datePickerAl2);
@@ -55,19 +55,22 @@ public class act_prestamo extends AppCompatActivity {
                 objeto1=objeto.getText().toString();
                 prestatario1=prestatario.getText().toString();
 
-                try{
-                    SQLiteDatabase db=conexionBD.getWritableDatabase();
-                    String SQL="INSERT INTO Prestamos(Categoria,ObjetoPres,Prestatario,FechPrest,FechRec,Estatus) VALUES ('"+categorias.getSelectedItem().toString()+"','"+objeto1+"','"+prestatario1+"','"+fechapres+"','"+fechadev+"',0)";
-                    //Categoria VARCHAR(50),ObjetoPres VARCHAR(100),Prestatario varchar(100),FechPrest DATE,FechRec DATE),Estatus INTEGER
-                    db.execSQL(SQL);
-                    new AlertDialog.Builder(act_prestamo.this).setTitle("INSERCION CORRECTA").setMessage("SE REGISTRO CORRECTAMENTE").show();
+               if(objeto1.length()==0 && prestatario1.length()==0){prestatario.setText("ingrese prestatario");objeto.setText("ingrese objeto");return;}
 
-                }
-                catch(SQLiteException e){
+                    try {
+                            SQLiteDatabase db = conexionBD.getWritableDatabase();
+                            String SQL = "INSERT INTO Prestamos(Categoria,ObjetoPres,Prestatario,FechPrest,FechRec,Estatus) VALUES ('" + categorias.getSelectedItem().toString() + "','" + objeto1 + "','" + prestatario1 + "','" + fechapres + "','" + fechadev + "',0)";
+                            //Categoria VARCHAR(50),ObjetoPres VARCHAR(100),Prestatario varchar(100),FechPrest DATE,FechRec DATE),Estatus INTEGER
+                            db.execSQL(SQL);
+                            new AlertDialog.Builder(act_prestamo.this).setTitle("INSERCION CORRECTA").setMessage("SE REGISTRO CORRECTAMENTE").show();
 
-                    new AlertDialog.Builder(act_prestamo.this).setTitle("ERROR").setMessage("NO SE PUDO REGISTRAR"+e.getMessage()).show();
+                    } catch (SQLiteException e) {
 
-                }
+                        new AlertDialog.Builder(act_prestamo.this).setTitle("ERROR").setMessage("NO SE PUDO REGISTRAR" + e.getMessage()).show();
+
+                    }
+
+
 
             }
         });

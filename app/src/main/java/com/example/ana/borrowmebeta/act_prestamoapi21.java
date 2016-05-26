@@ -53,9 +53,10 @@ public class act_prestamoapi21 extends AppCompatActivity {
                 fechaPRE=fepres.getText().toString();
                 fechaDEV=fedev.getText().toString();
                 fedev.setText(fechaActual());
+                if(objeto1.length()==0 && prestatario1.length()==0){prestatario.setText("ingrese prestatario");objeto.setText("ingrese objeto");return;}
                 try{
                     SQLiteDatabase db=conexionBD.getWritableDatabase();
-                    String SQL="INSERT INTO Prestamos(Categoria,ObjetoPres,Prestatario,FechPrest,FechRec,Estatus) VALUES ('"+categorias.getSelectedItem().toString()+"','"+objeto1+"','"+prestatario1+"','"+fechapres+"','"+fechadev+"',0)";
+                    String SQL="INSERT INTO Prestamos(Categoria,ObjetoPres,Prestatario,FechPrest,FechRec,Estatus) VALUES ('"+categorias.getSelectedItem().toString()+"','"+objeto1+"','"+prestatario1+"','"+fechaPRE+"','"+fechaDEV+"',0)";
                     //Categoria VARCHAR(50),ObjetoPres VARCHAR(100),Prestatario varchar(100),FechPrest DATE,FechRec DATE),Estatus INTEGER
                     db.execSQL(SQL);
                     new AlertDialog.Builder(act_prestamoapi21.this).setTitle("INSERCION CORRECTA").setMessage("SE REGISTRO CORRECTAMENTE").show();
