@@ -110,14 +110,13 @@ public class act_logprestamos extends AppCompatActivity {
             Cursor c = db.rawQuery(sql,null);
             int i=0;
             if(c.moveToFirst()){
-                obj = new String[c.getCount()][6];
+                obj = new String[c.getCount()][5];
                 do{
                     obj[i][0]=c.getString(0);
                     obj[i][1]=c.getString(2);
                     obj[i][2]=c.getString(3);
                     obj[i][3]=c.getString(4);
                     obj[i][4]=c.getString(5);
-                    obj[i][5]=c.getString(6);
                     i++;
                 }while(c.moveToNext());
             }

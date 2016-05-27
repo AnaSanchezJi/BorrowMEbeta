@@ -15,11 +15,21 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".act_recuperar" />
-        <activity android:name=".act_logrecuperados" />
-        <activity android:name=".act_logprestamos" />
-        <activity android:name=".act_prestamo" />
-        <activity android:name=".act_prestamoapi21" />
+
+        <activity android:name=".act_recuperar"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".act_logrecuperados"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".act_logprestamos"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".act_prestamo"
+            android:screenOrientation="portrait"
+            />
+        <activity android:name=".act_prestamoapi21"
+            android:screenOrientation="portrait"
+            />
     </application>
 
 </manifest>
